@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+
+{% block title %}Kodland{% endblock %}
+
+{% block content %}
+
+<div class="banner">
+    <div class="wrapper">
+        <h2 class="new">NEW</h2>
+        <h1 class="title">{{ new_post.name }}</h1>
+        <p class="description">{{ new_post.text }}</p>
+        <form method="get" action="/post/{{ new_post.id }}">
+            <button class="button" type="submit">Читать</button>
+        </form>
+        <img class="image" src="{{ new_post.image.url }}"/>
+    </div>
+</div>
+
+<div class="section">
+    <h3 class="articles">Другие статьи</h3>
+    <div class="container">
+        {% for post in posts %}
+        <div class="post">
+            <img class="post_image" src="{{ post.image.url }}" alt=""/>
+            <p class="post_date">{{ post.date }}</p>
+            <a class="post_title" href="/post/{{ post.id }}">{{ post.name }}</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

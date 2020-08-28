@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}{{ name }}{% endblock %}
+
+{% block content %}
+<div class="publication_page">
+    <div class="publication">
+        <h1 class="publication_name">{{ name }}</h1>
+        <img class="publication_image" src="{{ image.url }}"/>
+        <p class="publication_text">{{ text|safe }}</p>
+    </div>
+</div>
+{% endblock %}

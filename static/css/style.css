@@ -1,0 +1,348 @@
+
+@font-face {
+    font-family: 'Circe Rounded';
+    src: url('fonts/CircleRounded/CirceRounded-Regular.eot');
+    src: local('Circe Rounded'), local('CirceRounded-Regular'),
+        url('fonts/CircleRounded/CirceRounded-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CircleRounded/CirceRounded-Regular.woff2') format('woff2'),
+        url('fonts/CircleRounded/CirceRounded-Regular.woff') format('woff'),
+        url('fonts/CircleRounded/CirceRounded-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Museo Cyrl';
+	src: url('fonts/museocyrl/fonts/MuseoCyrl700.eot');
+	src: local('☺'), url('fonts/museocyrl/fonts/MuseoCyrl700.woff') format('woff'),
+	url('fonts/museocyrl/fonts/MuseoCyrl700.ttf') format('truetype'),
+	url('fonts/museocyrl/fonts/MuseoCyrl700.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+
+}
+
+.header {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height:80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing:border-box;
+    border-bottom: 2px solid #CDCDCD;
+}
+
+.wrapper {
+    padding-left: 120px;
+    padding-right: 180px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav {
+    display:flex;
+    font-size: 16px;
+    align-items: center;
+
+}
+
+.nav_btn {
+    display: flex;
+    flex-direction: row;
+    padding: 6px 16px;
+
+    width: 166px;
+    height: 32px;
+    left: 1154px;
+    top: 50px;
+    margin-right: 120px;
+
+    background: #315AF2;
+    border-radius: 6px;
+    border: none;
+
+    font-family: 'Circe Rounded';
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+.logo_img {
+    width: 189.26px;
+    height: 40px;
+    margin-left: 120px;
+    top: 50px;
+
+}
+
+.logo {
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+}
+
+.logo_text {
+    width: 46px;
+    height: 28px;
+    margin-left: 20px;
+    margin-top: 20px;
+
+    font-family: 'Circe Rounded';
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #010101;
+}
+
+.banner {
+    padding-top: 50px;
+    padding-bottom: 430px;
+    opacity: 1;
+    border-bottom: 2px solid #CDCDCD;
+}
+
+.new {
+    width: 37px;
+    height: 40px;
+    position: absolute;
+
+    font-family: Circe Rounded;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.416667px;
+
+    color: #E9399C;
+}
+
+.image {
+    position: absolute;
+    width: 464px;
+    height: 422px;
+    right: 480px;
+    top: 0px;
+    opacity: 1;
+}
+
+.title {
+    width: 672px;
+    height: 150px;
+    position: absolute;
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.416667px;
+    color: #315AF2;
+
+}
+
+.description {
+    position: absolute;
+    width: 391px;
+    height: 108px;
+    top: 150px;
+    font-family: Circe Rounded;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 136%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.416667px;
+
+    color: #000000;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 18px;
+    width: 150px;
+    height: 58px;
+    top: 290px;
+    position: absolute;
+
+    background: #315AF2;
+    border-radius: 6px;
+    border: none;
+
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.416667px;
+
+    color: #FFFFFF;
+
+}
+
+.section {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    left: 120px;
+    opacity:1;
+    position:absolute;
+}
+
+.articles {
+    width: 231px;
+    height: 38px;
+    left: 119px;
+    top: 651px;
+
+    font-family: 'Museo Cyrl';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.416667px;
+
+    color: #315AF2;
+
+}
+
+.container {
+	position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 27px;
+    grid-row-gap: 14px;
+}
+
+.post {
+    width: 335px;
+    height: 300px;
+    background: #FFFFFF;
+    border: 2px solid #CDCDCD;
+    box-sizing: border-box;
+}
+
+.page {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.post_image {
+    position: relative;
+    left: 50px;
+    width: 217px;
+    height: 112px;
+    padding-top: 30px;
+}
+
+.post_title {
+    position: absolute;
+    width: 248px;
+    height: 87px;
+
+    font-family: Circe Rounded;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
+    display: grid;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.416667px;
+
+    color: #315AF2;
+}
+
+.post_date {
+    position: absolute;
+    width: 95px;
+    height: 20px;
+    margin-top: -130px;
+    padding-left: 10px;
+
+    font-family: Circe Rounded;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+    display: grid;
+    align-items: center;
+    letter-spacing: -0.416667px;
+
+    color: #979797;
+}
+
+.page {
+    position: relative;
+    width: 435px;
+    height: 52px;
+    left: 120px;
+
+    font-family: Museo Cyrl;
+    font-size: 45px;
+    line-height: 52px;
+    /* identical to box height, or 116% */
+    letter-spacing: -0.416667px;
+
+    color: #315AF2;
+
+}
+
+.publication_page{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 405px;
+    padding-right: 411px;
+    background: #E5E5E5;
+}
+
+.publication_name {
+    position: static;
+    width: 400px;
+    height: 123px;
+
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 128%;
+    /* or 41px */
+    letter-spacing: -0.416667px;
+
+    color: #315AF2;
+}
+
+.publication_image {
+    position: relative;
+    border-radius: 12px;
+}
+
+.publication_text p {
+    position: static;
+	text-align: center;
+    align-items: center;
+    font-family: 'Circe Rounded';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 128%;
+    /* or 22px */
+
+    color: #404040;
+
+}

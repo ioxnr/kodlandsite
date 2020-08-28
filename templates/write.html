@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Write post{% endblock %}
+
+{% block content %}
+<h1 class="page"> Добавить статью </h1>
+
+<p style="color: red"> {{ error }}</p>
+
+<script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+
+<form method="post" action="write" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Введите название статьи"/>
+    <input type="submit" value="Опубликовать"/>
+    <br/>{% load wysiwyg %}
+    {% wysiwyg_setup %}
+
+    <textarea id="foo" name="text"></textarea>
+
+    {% wysiwyg_editor "foo" %}
+    <input type="file" placeholder="Файл" name="image"/>
+</form>
+{% endblock %}
